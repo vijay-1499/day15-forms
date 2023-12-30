@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Naveen">
+    <meta name="description" content="This page for create for to get user details.">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="form.png" type="image/x-icon">
+    <title>Form</title>
+</head>
+<body>
+   
+    <div class="container" id="form-container">
+        <header> 
+            <div class="text-center">
+                <h1 id="title" class="my-4">Get In Touch</h1>
+                <p id="description" class="lead px-5"></p>
+            </div>
+        </header>
+        <main>
+            <article>
+                <div class="row justify-content-center my-4">
+                    <div class="col-sm-6">
+                        <form action="" id="form" class="px-lg-2" method="post">
+                            <fieldset>
+                                <div class="form-group my-3">
+                                    <label for="first-name" class="form-label">First-name : </label>
+                                    <input type="text" id="first-name" name="first-name" class="form-control"
+                                    placeholder="ex: john"  required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="form-group my-3">
+                                    <label for="last-name" class="form-label">Last-name : </label>
+                                    <input type="text" id="last-name" name="last-name" class="form-control"
+                                    placeholder="ex: joe" required>
+                                    <div class="error"></div>
+                                </div>
+
+                                <!-- <div class="input">
+                                    <label for="e-mail" class="form-label">E-mail</label>
+                                    <input type="email" id="e-mail" name="e-mail" class="form-control"
+                                    placeholder="ex@email.com">
+                                </div> -->
+                                <div class="form-group my-3">
+                                    <label for="address" class="form-label">Address : </label>
+                                    <textarea name="address" id="address" cols="10" rows="2" class="form-control" placeholder="Enter your address..."  style="resize: none;" required></textarea>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="form-group my-3">
+                                    <label for="pincode" class="form-label">pincode : </label>
+                                    <input type="text" id="pincode" name="pincode" class="form-control"
+                                    placeholder="ex: 600 028"  style="resize: none;" required maxlength="6">
+                                    <div class="error"></div>
+                                </div>
+
+                                    <!-- gender -->
+                                <div class="form-group my-3" id="gender-radio">
+                                    <label for="gender" class="form-check-label">Gender:</label>
+                                    <div>
+                                    <input type="radio" id="male" name="gender" value="male"  class="form-check-input">
+                                    <label for="male" class="form-check-label">Male</label>
+                                    </div>
+                                    <div>
+                                    <input type="radio" id="female" name="gender" value="Female"  class="form-check-input"> 
+                                    <label for="female" class="form-check-label">Female</label></div>
+                                    <div>
+                                    <input type="radio" id="other" name="gender" value="Other"  class="form-check-input"> 
+                                    <label for="other" class="form-check-label">Other</label>
+                                    </div>
+                                    <div class="error"></div>
+                                </div>
+                                
+                                <div class="form-group my-3">
+                                    <label for="food" class="form-check-label">Choice of Food (select at least 2) :</label>
+
+                                    <div id="food-checkbox"> 
+                                    <div>
+                                    <input type="checkbox" id="food1" name="food" value="Pizza"  class="form-check-input"> 
+                                    <label for="food1" class="form-check-label">Pizza</label> </div>
+                                    <div>
+                                    <input type="checkbox" id="food2" name="food" value="Burger"  class="form-check-input"> 
+                                    <label for="food2" class="form-check-label">Burger</label></div>
+                                    <div>
+                                    <input type="checkbox" id="food3" name="food" value="Pasta"  class="form-check-input"> 
+                                    <label for="food3" class="form-check-label">Pasta</label></div>
+                                    <div>
+                                    <input type="checkbox" id="food4" name="food" value="Salad"  class="form-check-input"> 
+                                    <label for="food4" class="form-check-label">Salad</label></div>
+                                    <div>
+                                    <input type="checkbox" id="food5" name="food" value="Sushi"  class="form-check-input">
+                                    <label for="food5" class="form-check-label">Sushi</label></div>
+                                    <div class="error"></div>
+                                </div>
+                                </div>
+
+                                <div class="form-group my-3">
+                                    <label for="state" class="form-label">State :</label>
+                                    <input type="text" id="state" name="state" class="form-control"
+                                    placeholder="ex: TamilNadu">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="form-group my-3">
+                                    <label for="country" class="form-label">Country :</label>
+                                    <input type="text" id="country" name="country" class="form-control"
+                                    placeholder="ex: India">
+                                    <div class="error"></div>
+                                </div>
+
+                                <div class="form-group text-center m-4">
+                                    <button type="submit" id="submit" class="btn btn-primary py-2" >Submit</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <section>
+                    <div class="text-center my-2">
+                        <h3 id="table title"> Sumbitted-Data</h3>
+                        <p>After submitting your details. Please check here!</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="table-responsive">
+                        <table class="table table-striped my-3" id="dataTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">S.No</th>
+                                    <th scope="col">First-name</th>
+                                    <th scope="col">Last-name</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Pincode</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Food</th>
+                                    <th scope="col">State</th>
+                                    <th scope="col">Country</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- user details after submitting -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </article>
+        </main>
+                                    <hr>
+        <footer>
+            <p class="text-center p-5">This form is designed for gathering user information. Your data security and privacy are our utmost priority. Thank you for providing your information. <br> The form has been crafted by <strong>vijay</strong></p>
+        </footer>
+         
+     </div>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

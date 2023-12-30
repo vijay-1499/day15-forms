@@ -1,0 +1,88 @@
+body { 
+
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    color: black;
+}
+#form-container {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 30px;
+}
+#title {
+    font-weight: 700;
+    font-stretch: extra-expanded !important;
+    padding-top: 100px;
+    color: darkmagenta;
+}
+p {
+    font-size: 20px !important;
+    font-weight:400 !important;
+}
+.form-group input, textarea {
+    font-size: 15px;
+    border: 1px solid #9f01ea !important;
+}
+.input.success input  {
+    border-color: green;
+}
+.input.error input  {
+    border-color: red;
+}
+#gender-radio {
+    display: flex;
+
+}
+label {
+    font-weight: 500;
+}
+
+.error {
+    margin-top: 5px;
+    margin-left: 10px;
+    color: red;
+    font-size: 16px;
+}
+#gender-radio div {
+    margin-left: 10px;
+
+}
+fieldset {
+    border: 0;
+}
+#food-checkbox {
+    display: flex;
+    padding-left: 30PX;
+
+}
+#food-checkbox div {
+   margin: 10px;
+}
+#submit {
+    background: blueviolet;
+    color: beige;
+    width: 50%;
+    font-size: 25px;
+    border: none;
+    font-weight: 500;
+}
+#submit:hover {
+    background: green;
+}
+#submit:active {
+    background: red;
+}
+.table {
+    margin-bottom: 200px !important;
+   
+}
+.table thead tr th {
+    background: blueviolet;
+    color: white;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+.table tbody tr td {
+    background: white;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
